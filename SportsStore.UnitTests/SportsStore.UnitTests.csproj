@@ -88,7 +88,8 @@
     <Compile Include="DependencyResolution\IoC.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
     <Compile Include="DependencyResolution\StructureMapScopeModule.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="CartTests.cs" />
+    <Compile Include="WebUITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
