@@ -16,8 +16,7 @@ namespace SportsStore.WebUI.Controllers
             repository = repo;
         }
 
-        public PartialViewResult Menu(string category = null,
-            bool horizontalLayout = false)
+        public PartialViewResult Menu(string category = null)
         {
             ViewBag.SelectedCategory = category;
 
