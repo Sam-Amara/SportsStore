@@ -9,7 +9,7 @@
 
 <div class="panel">
     <div class="panel-heading">
-        <h3>Edit @Model.Name</h3>
+        <h3>@((Model.ProductID != 0) ? $"Edit {Model.Name}" : "Add New Product")</h3>
     </div>
 
     @using (Html.BeginForm("Edit", "Admin"))
