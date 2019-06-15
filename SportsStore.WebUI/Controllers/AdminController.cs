@@ -22,6 +22,11 @@ namespace SportsStore.WebUI.Controllers
             return View(repository.Products);
         }
 
+        public ViewResult Create()
+        {
+            return View("Edit", new Product());
+        }
+
         public ViewResult Edit(int productId)
         {
             var product = repository.Products.FirstOrDefault(p => p.ProductID == productId);
