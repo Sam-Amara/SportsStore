@@ -23,13 +23,14 @@
                         @if (property.PropertyName == "Description")
                         {
                             @Html.TextArea(property.PropertyName, null,
-                                    new { @class = "form-control", rows = 5 })
+                                    new { @class = "form-control", rows = 4 })
                         }
                         else
                         {
                             @Html.TextBox(property.PropertyName, null,
                                     new { @class = "form-control" })
                         }
+                        @Html.ValidationMessage(property.PropertyName)
                     </div>
                 }
             }
