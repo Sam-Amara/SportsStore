@@ -3,6 +3,8 @@
 @{
     ViewBag.Title = $"Admin: Edit {Model.Name}";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    HtmlHelper.ClientValidationEnabled = false;
+    HtmlHelper.UnobtrusiveJavaScriptEnabled = false;
 }
 
 <div class="panel">
